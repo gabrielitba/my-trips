@@ -1,14 +1,15 @@
-import client from 'graphql/client';
+import { GetStaticProps } from 'next';
 import { useRouter } from 'next/dist/client/router';
+import client from 'graphql/client';
+import { GetPageBySlugQuery, GetPagesQuery } from 'graphql/generated/graphql';
+
 import { GET_PAGES, GET_PAGE_BY_SLUG } from 'graphql/queries';
 import PageTemplate, { PageTemplateProps } from 'templates/Pages';
-import { GetStaticProps } from 'next';
-import { GetPageBySlugQuery, GetPagesQuery } from 'graphql/generated/graphql';
 
 export default function Page({ heading, body }: PageTemplateProps) {
   const router = useRouter();
 
-  if (router.isFallback) return null;
+  if (router.isFallback) return <h1>Carregando...</h1>;
 
   return <PageTemplate heading={heading} body={body} />;
 }

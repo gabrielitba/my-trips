@@ -14,6 +14,7 @@ export const getStaticProps = async () => {
   const { places } = await client.request<GetPlacesQuery>(GET_PLACES);
 
   return {
+    revalidate: 5,
     props: {
       places,
     },

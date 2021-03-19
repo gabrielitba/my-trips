@@ -35,8 +35,6 @@ export const Gallery = styled.div`
       #f6f7f8 100%
     );
 
-    height: 700px;
-    width: 1000px;
     background-size: 80rem 14rem;
     animation: placeholderShimmer 1s linear infinite forwards;
 

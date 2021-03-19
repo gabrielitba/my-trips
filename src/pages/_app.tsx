@@ -3,13 +3,16 @@ import Head from 'next/head';
 
 import NProgress from 'next-nprogress/component';
 
+import { DefaultSeo } from 'next-seo';
+
+import SEO from '../../next-seo.config';
+
 import GlobalStyles from 'styles/global';
 
 function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>My Trips</title>
         <link rel="shortcut icon" href="/img/icon-512.png" />
         <link rel="apple-touch-icon" href="/img/icon-512.png" />
         <link rel="manifest" href="/manifest.json" />
@@ -21,12 +24,8 @@ function App({ Component, pageProps }: AppProps) {
           integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
           crossOrigin=""
         />
-        <meta name="theme-color" content="#06092B" />
-        <meta
-          name="description"
-          content="A simples project to show my favorite spot in the world."
-        />
       </Head>
+      <DefaultSeo {...SEO} />
       <GlobalStyles />
       <Component {...pageProps} />
 

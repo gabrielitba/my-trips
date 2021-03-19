@@ -1,6 +1,8 @@
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 
+import NProgress from 'next-nprogress/component';
+
 import GlobalStyles from 'styles/global';
 
 function App({ Component, pageProps }: AppProps) {
@@ -27,6 +29,13 @@ function App({ Component, pageProps }: AppProps) {
       </Head>
       <GlobalStyles />
       <Component {...pageProps} />
+
+      <NProgress
+        color="#e20e8d"
+        options={{ trickleSpeed: 50 }}
+        showAfterMs={300}
+        spinner
+      />
     </>
   );
 }

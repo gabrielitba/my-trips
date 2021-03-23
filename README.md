@@ -10,7 +10,7 @@ My Trips é uma aplicação em Next integrado com um CMS, que cria um mapa inter
 
 ## 🎥 Prévia do Projeto
 
-![alt text](https://i.imgur.com/w4q6bBa.gif)
+![alt text](https://i.imgur.com/T95GqZl.gif)
 
 [Ou acesse agora](https://my-trips-gabrielitba.vercel.app/)
 

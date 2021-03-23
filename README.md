@@ -20,6 +20,8 @@ My Trips é uma aplicação em Next integrado com um CMS, que cria um mapa inter
 
 - **typescript**
 - **nextjs**
+- **jest**
+- **react-testing-library**
 - **eslint**
 - **prettier**
 - **husky**

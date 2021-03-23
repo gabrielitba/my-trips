@@ -28,10 +28,8 @@ My Trips é uma aplicação em Next integrado com um CMS, que cria um mapa inter
 - **lint-staged**
 - **plop**
 - **styled-components**
-- **leaflet**
-- **react-leaflet**
-- **graphql**
-- **graphql-request**
+- **leaflet | react-leaflet**
+- **graphql | graphql-request**
 
 &nbsp;
 
